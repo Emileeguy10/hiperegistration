@@ -1,11 +1,313 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HIPE University - New Student Registration</title>
+
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+    
+    <header class="py-4">
+    <div class="container text-center">
+   
+
+      <h1 class="mb-0">HIPE University</h1>
+      <h2 class="h4 mt-2 mb-3">New Student Registration</h2>
+      <p class="lead">
+     
+      </p>
+    </div>
+  </header>
+  
+  
+  <main class="my-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+          
+
+
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title mb-4 text-center">Registration Form</h3>
+
+          
+
+              <form 
+                action="https://formspree.io/f/xldqloow" 
+                method="POST">
+          
+
+<div class="row mb-3">
+  <div class="col-md-6 mb-3 mb-md-0">
+    <label for="firstName" class="form-label">First Name</label>
+    <input 
+      type="text" 
+      class="form-control" 
+      id="firstName" 
+      name="first_name" 
+      placeholder="Enter your first name" 
+      required
+    >
+  </div>
+  <div class="col-md-6">
+    <label for="lastName" class="form-label">Last Name</label>
+    <input 
+      type="text" 
+      class="form-control" 
+      id="lastName" 
+      name="last_name" 
+      placeholder="Enter your last name" 
+      required
+    >
+  </div>
+</div>
+
+
+
+<div class="mb-3">
+  <label for="email" class="form-label">Email Address</label>
+  <input 
+    type="email" 
+    class="form-control" 
+    id="email" 
+    name="email" 
+    placeholder="example@domain.com" 
+    required
+  >
+</div>
+
+
+
+<div class="mb-3">
+  <label for="phone" class="form-label">Phone Number</label>
+  <input 
+    type="tel" 
+    class="form-control" 
+    id="phone" 
+    name="phone" 
+    placeholder="+237 6XX XXX XXX" 
+    required
+  >
+</div>
+
+
+
+
+<div class="mb-3">
+  <label for="dob" class="form-label">Date of Birth</label>
+  <input 
+    type="date" 
+    class="form-control" 
+    id="dob" 
+    name="date_of_birth" 
+    required
+  >
+</div>
+
+
+
+<div class="mb-3">
+  <label class="form-label d-block">Gender</label>
+  <div class="form-check form-check-inline">
+    <input 
+      class="form-check-input" 
+      type="radio" 
+      name="gender" 
+      id="genderMale" 
+      value="Male" 
+      required
+    >
+    <label class="form-check-label" for="genderMale">Male</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input 
+      class="form-check-input" 
+      type="radio" 
+      name="gender" 
+      id="genderFemale" 
+      value="Female"
+    >
+    <label class="form-check-label" for="genderFemale">Female</label>
+  </div>
+</div>
+
+
+
+<div class="mb-3">
+  <label for="faculty" class="form-label">Faculty / School</label>
+  <select 
+    class="form-select" 
+    id="faculty" 
+    name="faculty" 
+    required
+  >
+    <option value="" selected disabled>Select your faculty</option>
+    <option value="School of Engineering">School of Engineering</option>
+    <option value="School of Business">School of Business</option>
+    <option value="School of ICT">School of ICT</option>
+
+    
+  </select>
+</div>
+
+
+
+<div class="mb-3">
+  <label for="program" class="form-label">Program of Study</label>
+  <select 
+    class="form-select" 
+    id="program" 
+    name="program" 
+    required
+  >
+    <option value="" selected disabled>Select your program</option>
+    <option value="HND Software Engineering">HND Software Engineering</option>
+    <option value="HND Network and Security">HND Network and Security</option>
+    <option value="BTech Computer Engineering">BTech Computer Engineering</option>
+
+  </select>
+</div>
+
+
+
+<div class="mb-3">
+  <label for="level" class="form-label">Level</label>
+  <select 
+    class="form-select" 
+    id="level" 
+    name="level" 
+    required
+  >
+    <option value="" selected disabled>Select your level</option>
+    <option value="HND 1">HND 1</option>
+    <option value="HND 2">HND 2</option>
+    <option value="BTech 1">BTech 1</option>
+    <option value="BTech 2">BTech 2</option>
+  </select>
+</div>
+
+
+
+
+<div class="mb-3">
+  <label class="form-label d-block">Mode of Study</label>
+  <div class="form-check form-check-inline">
+    <input 
+      class="form-check-input" 
+      type="radio" 
+      name="mode_of_study" 
+      id="fullTime" 
+      value="Full Time" 
+      required
+    >
+    <label class="form-check-label" for="fullTime">Full Time</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input 
+      class="form-check-input" 
+      type="radio" 
+      name="mode_of_study" 
+      id="partTime" 
+      value="Part Time"
+    >
+    <label class="form-check-label" for="partTime">Part Time</label>
+  </div>
+</div>
+
+
+
+
+<div class="mb-3">
+  <label for="address" class="form-label">Address</label>
+  <textarea 
+    class="form-control" 
+    id="address" 
+    name="address" 
+    rows="3" 
+    placeholder="Enter your full address" 
+    required
+  ></textarea>
+</div>
+
+
+
+<div class="mb-3">
+  <label for="password" class="form-label">Password</label>
+  <input 
+    type="password" 
+    class="form-control" 
+    id="password" 
+    name="password" 
+    placeholder="Create a password" 
+    required
+  >
+</div>
+
+
+
+
+<div class="mb-3">
+  <label for="confirmPassword" class="form-label">Confirm Password</label>
+  <input 
+    type="password" 
+    class="form-control" 
+    id="confirmPassword" 
+    name="confirm_password" 
+    placeholder="Re-enter your password" 
+    required
+  >
+</div>
+
+<div class="mb-3 form-check">
+  <input 
+    type="checkbox" 
+    class="form-check-input" 
+    id="confirmInfo" 
+    name="confirm_info" 
+    required
+  >
+  <label class="form-check-label" for="confirmInfo">
+    I confirm that the information provided is correct.
+  </label>
+</div>
+
+
+<div class="d-grid">
+  <button type="submit" class="btn btn-primary">
+    Submit Registration
+  </button>
+</div>
+
+            
+            
+            </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-4 text-center">
+    <p class="mb-0">HIPE University</p>
+    <p class="mb-0">MULUH EMILE AWAH –  No 25SWE0951</p>
+    <p class="mb-0">2025</p>
+  </footer>
+
+
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
 </body>
 </html>
