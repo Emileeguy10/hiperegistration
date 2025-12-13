@@ -7,8 +7,6 @@ body {
 /* Center content a bit better */
 header, main, footer {
   margin-bottom: 1rem;
-  background-color: #111827;
-  color: #f9fafb;
 }
 
 /* Card spacing */
@@ -23,9 +21,9 @@ main .container {
 }
 
 /* Footer */
-footer {
-  background-color: #111827;
-  color: #f9fafb;
+footer,header {
+  background-color: #4778e0;
+  color: #d5e1ec;
 }
 
 /* Buttons */
@@ -46,4 +44,3 @@ footer {
     font-size: 0.95rem;
   }
 }
-
